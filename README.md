@@ -26,22 +26,22 @@
 ## Penjelasan 4 Pilar OOP dalam Studi Kasus
 
 ### 1. Inheritance
-<p>Lorem ipsum sir dolor amet.</p>
+<p></p>
 
 ### 2. Encapsulation
-<p>Lorem ipsum sir dolor amet.</p>
+<p></p>
 
 ### 3. Polymorphism
-<p>Lorem ipsum sir dolor amet.</p>
+<p></p>
 
 ### 4. Abstract
-<p>Lorem ipsum sir dolor amet.</p>
+<p></p>
 
 ## Struktur Tabel Aplikasi
-<p>Lorem ipsum sir dolor amet.</p>
+<p></p>
 
 ## Tampilan Aplikasi
-<p>Lorem ipsum sir dolor amet.</p>
+<p></p>
 
 ## Demo Proyek
 <ul>
