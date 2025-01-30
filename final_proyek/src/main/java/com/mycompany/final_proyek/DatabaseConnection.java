@@ -14,9 +14,9 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
 
-    private static final String URL = "jdbc:mysql://sql.freedb.tech:3306/freedb_System_KHS"; // Ganti 'your_database_name' dengan nama database Anda
-    private static final String USER = "freedb_Jerry"; // Ganti 'your_username' dengan username database Anda
-    private static final String PASSWORD = "XCmMnHxf%b!Q2?W"; // Ganti 'your_password' dengan password database Anda
+    private static final String URL = "jdbc:mysql://localhost:3306/final_proyekdb";
+    private static final String USER = "root";
+    private static final String PASSWORD = "";
 
     private static Connection connection;
 
