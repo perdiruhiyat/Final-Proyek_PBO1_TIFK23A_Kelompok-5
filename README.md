@@ -21,7 +21,7 @@
 <p>Sistem Akademik - KHS</p>
 
 ## Penjelasan Studi Kasus
-<p>Pada Sistem Akademik - KHS ini memiliki 2 Role yaitu Dosen dan juga Mahasiswa, yang dimana Dosen dapat menginput nilai pada matakuliah yang diambil oleh mahasiswa, sedangkan mahasiswa dapat melihat data / informasi nilai mahasiswa tersebut. </p>
+<p>Pada Sistem Akademik - KHS ini memiliki 2 Role yaitu Admin dan juga Mahasiswa, yang dimana Admin dapat mengelola nilai dan juga mengelola user, sedangkan mahasiswa dapat melihat data / informasi nilai mahasiswa tersebut. </p>
 
 ## Penjelasan 4 Pilar OOP dalam Studi Kasus
 
