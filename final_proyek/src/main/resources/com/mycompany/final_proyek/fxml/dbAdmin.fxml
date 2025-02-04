@@ -1,13 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.final_proyek.Controller.DbAdminController">
-    <children>
-      <Label layoutX="14.0" layoutY="14.0" text="Welcome Admin!" />
-   </children>
-</AnchorPane>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="128.0" style="-fx-background-color: #16423C;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="537.0" prefWidth="128.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Button fx:id="btndb" layoutX="-1.0" layoutY="14.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="130.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/dashboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnData" layoutY="164.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/mahasiswa.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnNilai" layoutY="243.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/grade.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnUser" layoutY="323.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLogout" layoutY="465.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="db" prefHeight="484.0" prefWidth="472.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="220.53677368164062">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
