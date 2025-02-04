@@ -26,13 +26,13 @@
 ## Penjelasan 4 Pilar OOP dalam Studi Kasus
 
 ### 1. Inheritance
-<p></p>
+<p>penerapa diterapkan pada kelas nilai dimana kelas itu bisa berdiri jika mata kuliahnya ada</p>
 
 ### 2. Encapsulation
-<p></p>
+<p> Penerapanditerapkan pada penampilan khs lengkap mahasiswa dimana semua data disimpan dan ditampilkan</p>
 
 ### 3. Polymorphism
-<p></p>
+<p>Penerapan OOP diterapkan pada perubahan grademenjadi bobot nilai yang nantinya akan dipakai pada penghhitungan KHS</p>
 
 ### 4. Abstract
 <p></p>
