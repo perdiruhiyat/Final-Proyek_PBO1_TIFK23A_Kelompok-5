@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="875.0" style="-fx-background-color: #C4DAD2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.final_proyek.Controller.AdminDataMhsController">
+   <children>
+      <Text layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Mahasiswa" wrappingWidth="243.13671875">
+         <font>
+            <Font name="Monospaced Regular" size="27.0" />
+         </font>
+      </Text>
+      <TableView fx:id="DataMahasiswaTabel" layoutX="10.0" layoutY="239.0" prefHeight="300.0" prefWidth="855.0">
+        <columns>
+          <TableColumn fx:id="nimColumn" prefWidth="104.79998588562012" text="NIM" />
+          <TableColumn fx:id="namaColumn" prefWidth="131.20001983642578" text="Nama" />
+            <TableColumn fx:id="kelasColumn" prefWidth="64.79998779296875" resizable="false" text="Kelas" />
+            <TableColumn fx:id="jenisKelaminColumn" prefWidth="88.0" resizable="false" text="Jenis Kelamin" />
+            <TableColumn fx:id="programStudiColumn" prefWidth="146.39993286132812" resizable="false" text="Program Studi" />
+            <TableColumn fx:id="semesterColumn" minWidth="0.0" prefWidth="99.20001220703125" resizable="false" text="Semester" />
+            <TableColumn fx:id="angkatanColumn" prefWidth="83.99993896484375" resizable="false" text="Angkatan" />
+            <TableColumn fx:id="sistemKuliahColumn" prefWidth="139.199951171875" resizable="false" text="Sistem Kuliah" />
+        </columns>
+      </TableView>
+      <Line endX="864.0" endY="37.29290008544922" layoutY="7.0" startX="13.0" startY="37.29289245605469" strokeWidth="5.0" />
+      <Pane layoutX="10.0" layoutY="53.0" prefHeight="144.0" prefWidth="855.0" style="-fx-background-color: #E9EFEC;">
+         <children>
+            <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIM">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kelas">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtNim" layoutX="128.0" layoutY="9.0" prefHeight="25.0" prefWidth="217.0" />
+            <TextField fx:id="txtNama" layoutX="128.0" layoutY="40.0" prefHeight="25.0" prefWidth="217.0" />
+            <TextField fx:id="txtKelas" layoutX="128.0" layoutY="72.0" prefHeight="25.0" prefWidth="217.0" />
+            <Text layoutX="459.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Studi">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="cmboxProdi" layoutX="573.0" layoutY="9.0" prefHeight="25.0" prefWidth="217.0" />
+            <Text layoutX="459.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="459.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angkatan">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSmt" layoutX="573.0" layoutY="40.0" prefWidth="217.0" />
+            <TextField fx:id="txtAngkatan" layoutX="573.0" layoutY="72.0" prefWidth="217.0" />
+            <Text layoutX="459.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistem Kuliah">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="cmboxSiskul" layoutX="573.0" layoutY="106.0" prefHeight="25.0" prefWidth="217.0" />
+            <Text layoutX="14.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Kelamin">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="cmboxJenisKelamin" layoutX="128.0" layoutY="106.0" prefHeight="25.0" prefWidth="217.0" />
+         </children>
+      </Pane>
+      <Button fx:id="btnTambah" layoutX="11.0" layoutY="205.0" minHeight="25.0" mnemonicParsing="false" onMouseClicked="#tambah" prefWidth="65.0" style="-fx-background-color: #16423C;" text="Tambah" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="85.0" layoutY="205.0" minHeight="25.0" mnemonicParsing="false" onMouseClicked="#update" prefWidth="65.0" style="-fx-background-color: #16423C;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnHapus" layoutX="158.0" layoutY="205.0" minHeight="25.0" mnemonicParsing="false" onMouseClicked="#hapus" prefWidth="65.0" style="-fx-background-color: #16423C;" text="Hapus" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClear" layoutX="570.0" layoutY="205.0" minHeight="25.0" mnemonicParsing="false" onMouseClicked="#clearFields" prefWidth="65.0" style="-fx-background-color: #16423C;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchField" layoutX="647.0" layoutY="203.0" prefHeight="25.0" prefWidth="217.0" promptText="Cari Mahasiswa...." />
+      <Button fx:id="btnPrint" layoutX="824.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#printReport" style="-fx-background-color: #E9EFEC;">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/print.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
