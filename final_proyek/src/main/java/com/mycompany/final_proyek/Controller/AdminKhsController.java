@@ -153,7 +153,11 @@ public class AdminKhsController {
             );
             khs.tambah();
             loadDataKhs();
-            clearFields();
+            filterTable(txtNim.getText());
+            txtKodeMk.clear();
+            txtSks.clear();
+            txtGrade.clear();
+            cmboxMatkul.setValue(null);
             showAlert(Alert.AlertType.INFORMATION, "Sukses", "Data KHS berhasil ditambahkan!");
         }
     }
@@ -163,9 +167,9 @@ public class AdminKhsController {
         Khs selectedKhs = khsTabel.getSelectionModel().getSelectedItem();
         if (selectedKhs != null && validasiInput()) {
             Khs khs = new Khs(
-                txtNim.getText(),
                 txtKodeMk.getText(),
-                txtGrade.getText()
+                txtGrade.getText(),
+                Integer.parseInt(txtID.getText())
             );
             khs.update();
             loadDataKhs();
