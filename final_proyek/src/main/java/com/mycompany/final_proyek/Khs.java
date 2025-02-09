@@ -31,6 +31,12 @@ public class Khs extends Operations{
         this.grade = grade;
     }
     
+    public Khs(String kodeMk, String grade, int idKhs) {
+        this.kodeMk = kodeMk;
+        this.grade = grade;
+        this.idKhs = idKhs;
+    }
+    
     public Khs(int idKhs, String nim, String kodeMk, String grade) {
         this.idKhs = idKhs;
         this.nim = nim;
@@ -130,13 +136,11 @@ public class Khs extends Operations{
     
     @Override
     public void tambah() {
-        String query = "INSERT INTO khs (nim, kode_matkul, nama_matkul, sks, grade) VALUES (?, ?, ?, ?, ?)";
+        String query = "INSERT INTO khs (nim, kode_mk, grade) VALUES (?, ?, ?)";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setString(1, nim);
             stmt.setString(2, kodeMk);
-            stmt.setString(3, mataKuliah);
-            stmt.setInt(4, sks);
-            stmt.setString(5, grade);
+            stmt.setString(3, grade);
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -145,13 +149,11 @@ public class Khs extends Operations{
 
     @Override
     public void update() {
-        String query = "UPDATE khs SET nama_matkul=?, sks=?, grade=? WHERE nim=? AND kode_matkul=?";
+        String query = "UPDATE khs SET kode_mk=?, grade=? WHERE id_khs=?";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
-            stmt.setString(1, mataKuliah);
-            stmt.setInt(2, sks);
-            stmt.setString(3, grade);
-            stmt.setString(4, nim);
-            stmt.setString(5, kodeMk);
+            stmt.setString(1, kodeMk);
+            stmt.setString(2, grade);
+            stmt.setInt(3, idKhs);
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -160,10 +162,9 @@ public class Khs extends Operations{
 
     @Override
     public void hapus() {
-        String query = "DELETE FROM khs WHERE nim=? AND kode_matkul=?";
+        String query = "DELETE FROM khs WHERE id_khs=?";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
-            stmt.setString(1, nim);
-            stmt.setString(2, kodeMk);
+            stmt.setInt(1, idKhs);
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
